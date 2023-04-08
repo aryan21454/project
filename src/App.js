@@ -12,6 +12,7 @@ function App() {
         setmylist([...mylist,work])
     }
     return (<div>
+        <button>Delete</button>
         To Do list    
         <input type= 'text' onChange={(event)=>{setwork(event.target.value)}}/>
         <br/>
@@ -21,6 +22,7 @@ function App() {
         <li >{item}</li>
       ))}
     </ul>
+    
     </div>);
 }
 export default App;
